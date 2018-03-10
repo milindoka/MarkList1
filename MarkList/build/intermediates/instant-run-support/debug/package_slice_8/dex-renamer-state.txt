@@ -1,0 +1,4 @@
+#Sat Mar 10 21:22:58 IST 2018
+base.0=/home/student/AndroidStudioProjects/MarkList1/MarkList/build/intermediates/transforms/dexMerger/debug/27
+path.0=classes.dex
+renamed.0=classes.dex

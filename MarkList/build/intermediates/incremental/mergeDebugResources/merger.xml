@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main$Generated" generated="true"><source path="/home/student/AndroidStudioProjects/MarkList1/MarkList/src/main/res"/><source path="/home/student/AndroidStudioProjects/MarkList1/MarkList/build/generated/res/rs/debug"/><source path="/home/student/AndroidStudioProjects/MarkList1/MarkList/build/generated/res/resValues/debug"/></dataSet><dataSet config="main" generated-set="main$Generated"><source path="/home/student/AndroidStudioProjects/MarkList1/MarkList/src/main/res"><file name="ic_launcher" path="/home/student/AndroidStudioProjects/MarkList1/MarkList/src/main/res/drawable-hdpi/ic_launcher.png" qualifiers="hdpi-v4" type="drawable"/><file name="roll" path="/home/student/AndroidStudioProjects/MarkList1/MarkList/src/main/res/layout/roll.xml" qualifiers="" type="layout"/><file name="set_dlg" path="/home/student/AndroidStudioProjects/MarkList1/MarkList/src/main/res/layout/set_dlg.xml" qualifiers="" type="layout"/><file name="main" path="/home/student/AndroidStudioProjects/MarkList1/MarkList/src/main/res/layout/main.xml" qualifiers="" type="layout"/><file name="listdialog" path="/home/student/AndroidStudioProjects/MarkList1/MarkList/src/main/res/layout/listdialog.xml" qualifiers="" type="layout"/><file name="ml_help" path="/home/student/AndroidStudioProjects/MarkList1/MarkList/src/main/res/layout/ml_help.xml" qualifiers="" type="layout"/><file name="header_dlg" path="/home/student/AndroidStudioProjects/MarkList1/MarkList/src/main/res/layout/header_dlg.xml" qualifiers="" type="layout"/><file name="title" path="/home/student/AndroidStudioProjects/MarkList1/MarkList/src/main/res/layout/title.xml" qualifiers="" type="layout"/><file name="simplerow1" path="/home/student/AndroidStudioProjects/MarkList1/MarkList/src/main/res/layout/simplerow1.xml" qualifiers="" type="layout"/><file name="custombutton" path="/home/student/AndroidStudioProjects/MarkList1/MarkList/src/main/res/drawable/custombutton.xml" qualifiers="" type="drawable"/><file name="custombuttonred" path="/home/student/AndroidStudioProjects/MarkList1/MarkList/src/main/res/drawable/custombuttonred.xml" qualifiers="" type="drawable"/><file name="custombuttonblue" path="/home/student/AndroidStudioProjects/MarkList1/MarkList/src/main/res/drawable/custombuttonblue.xml" qualifiers="" type="drawable"/><file name="back" path="/home/student/AndroidStudioProjects/MarkList1/MarkList/src/main/res/drawable/back.xml" qualifiers="" type="drawable"/><file name="custombuttongreen" path="/home/student/AndroidStudioProjects/MarkList1/MarkList/src/main/res/drawable/custombuttongreen.xml" qualifiers="" type="drawable"/><file name="ic_launcher" path="/home/student/AndroidStudioProjects/MarkList1/MarkList/src/main/res/drawable-xhdpi/ic_launcher.png" qualifiers="xhdpi-v4" type="drawable"/><file name="ic_launcher" path="/home/student/AndroidStudioProjects/MarkList1/MarkList/src/main/res/drawable-xxhdpi/ic_launcher.png" qualifiers="xxhdpi-v4" type="drawable"/><file name="main" path="/home/student/AndroidStudioProjects/MarkList1/MarkList/src/main/res/layout-land/main.xml" qualifiers="land" type="layout"/><file name="simplerow1" path="/home/student/AndroidStudioProjects/MarkList1/MarkList/src/main/res/layout-land/simplerow1.xml" qualifiers="land" type="layout"/><file name="ic_launcher" path="/home/student/AndroidStudioProjects/MarkList1/MarkList/src/main/res/drawable-mdpi/ic_launcher.png" qualifiers="mdpi-v4" type="drawable"/><file path="/home/student/AndroidStudioProjects/MarkList1/MarkList/src/main/res/values/style.xml" qualifiers=""><style name="CodeFont" parent="@android:style/Widget.Button">
+        <item name="android:textColor">#ffffff</item>
+    </style><style name="ButtonText">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">3dp</item>
+        <item name="android:textSize">30dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">2</item>
+    </style></file><file path="/home/student/AndroidStudioProjects/MarkList1/MarkList/src/main/res/values/strings.xml" qualifiers=""><string name="hello">Hello World, Cloud101CalculatorActivity!</string><string name="app_name">MarkList</string><string name="b1">1</string><string name="clear">clear</string><string name="backspace">backspace</string><string name="okB">Okay</string><string formatted="false" name="ht"><![CDATA[<ul>
+		<li>Commands are self explanatory. Additionally Long Press On Roll to Insert, Delete, Extend Roll.
+		</li>
+		
+		<li>Enter your School/College Name and Email(s) and save them permenantly using [Set] Commands on button bar</li>
+		
+		<li>Never touch the sliding part. Use UP or DN button to slide Roll up and down. Use JMP (Jump) button to adjust
+		 slide mismatch or go to any Roll number to view or edit.
+		 <li>To print marklist, install MRK.exe on any linux version in WINE. If you are in India, I would like
+		  you to use it on BOSS (www.bosslinux.in), the Indianized version of Linux, even though it works on Windows PC. 
+	       Transfer .mrk file to pc and double click the file to print.
+	      </li>
+	      <li>To bulk print marklists, keep all the files in MRK.exe folder and
+		  run MRK.exe. 
+		  </li>
+		  <li>To modify .mrk file on PC, use Marklist.jar.
+		  </li>  
+	      <li>MRKreport.exe will print table of all files kept in MRKreport.exe folder with page totals.
+	     </li>
+	     <li>You can use open source Thunderbird pop client with addon - Attachment Extracter - to auto-collect all marklist
+	         in one folder where MRK.exe is kept and bulk print them.
+	      </li> 
+	       <li>You can also use Dukto (FOSS) or any other file transfer app to send .mrk files from Android to PC
+	       </li>
+	       <li>MRKaccumulater.jar will make a compilation of all marklist files in one single text file Result.rlt.
+	        It is easy to prepare and print result sheets (Progress Cards) from this compilation if you have little programming knowledge.
+	        </li>
+	        <li>MRKaccumulator.jar can also make mySQL database file if you have Local Server WAMP or XAMPP installed.
+	         This database can be used to Upload the data on the Website of School or College
+	          </li> 
+	        <li>All 5 Apps are available free with source code on Sourceforge website in one zip file.</li>
+	<li>Download Link : http://sourceforge.net/projects/marklist/</li>
+	<li>Contact : oak444@gmail.com</li>
+	<li>Thanks to Niraj and Sahil for their valuable suggestions.</li>
+	<li>Thanks for using Marklist.</li>
+ </ul>
+ ]]></string></file><file name="ic_launcher" path="/home/student/AndroidStudioProjects/MarkList1/MarkList/src/main/res/drawable-ldpi/ic_launcher.png" qualifiers="ldpi-v4" type="drawable"/></source><source path="/home/student/AndroidStudioProjects/MarkList1/MarkList/build/generated/res/rs/debug"/><source path="/home/student/AndroidStudioProjects/MarkList1/MarkList/build/generated/res/resValues/debug"/></dataSet><dataSet config="debug$Generated" generated="true"><source path="/home/student/AndroidStudioProjects/MarkList1/MarkList/src/debug/res"/></dataSet><dataSet config="debug" generated-set="debug$Generated"><source path="/home/student/AndroidStudioProjects/MarkList1/MarkList/src/debug/res"/></dataSet><mergedItems/></merger>
