@@ -1507,6 +1507,8 @@ public class MarkListActivity extends Activity {
     	sendIntent.putExtra(Intent.EXTRA_SUBJECT,temp);
     		sendIntent.putExtra(Intent.EXTRA_TEXT, "Sending Marklist...");
     		sendIntent.putExtra(Intent.EXTRA_STREAM, Uri.parse("file://" + FileNameWithPath));
+		    String pdfname=FileNameWithPath.replaceAll(".mrk",".pdf");
+		    sendIntent.putExtra(Intent.EXTRA_STREAM, Uri.parse("file://" + pdfname));
     		
     		String E1=Email1.trim();
     		String E2=Email2.trim();
