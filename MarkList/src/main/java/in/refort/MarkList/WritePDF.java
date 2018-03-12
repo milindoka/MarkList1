@@ -42,10 +42,11 @@ public class WritePDF
 
     int strength=147,requiredtables=0;
     String collegename,classdiv,subject,examiner,examination,totalmarks,date;
+    String pagetotal;
 
    void SetData(String collegename,String classdiv,String subject,
                 String examiner, String examination,String totalmarks,
-                String date) {
+                String date,String pagetotal) {
        this.collegename = collegename;
        this.classdiv = classdiv;
        this.subject = subject;
@@ -53,6 +54,7 @@ public class WritePDF
        this.examination = examination;
        this.totalmarks = totalmarks;
        this.date = date;
+       this.pagetotal=pagetotal;
    }
 
    void SetRollArray(ArrayList<String>  roll,ArrayList mark)
@@ -194,13 +196,10 @@ public class WritePDF
 
     }
 
-
-
     void AddFooter(Document document) throws DocumentException, IOException
     {PdfPTable table = new PdfPTable(2);
 
-
-        PdfPCell cell = new PdfPCell(new Phrase("Key : AABBABABAADDDCCC"));
+        PdfPCell cell = new PdfPCell(new Phrase(" "));
         cell.setBorder(PdfPCell.NO_BORDER);
         cell.setHorizontalAlignment(PdfPCell.ALIGN_LEFT);
         table.addCell(cell);
@@ -214,7 +213,7 @@ public class WritePDF
         table.addCell(cell);
 
 
-        cell = new PdfPCell(new Phrase("Page Total : "));
+        cell = new PdfPCell(new Phrase(pagetotal));
         cell.setBorder(PdfPCell.NO_BORDER);
         cell.setHorizontalAlignment(PdfPCell.ALIGN_LEFT);
         table.setWidthPercentage(95);
@@ -225,11 +224,6 @@ public class WritePDF
         cell.setBorder(PdfPCell.NO_BORDER);
         cell.setHorizontalAlignment(PdfPCell.ALIGN_RIGHT);
         table.addCell(cell);
-
-
-
-
-
 
         cell = new PdfPCell(new Phrase(" "));
         //  cell.setBorder(PdfPCell.NO_BORDER);

@@ -55,6 +55,8 @@ import android.view.MenuItem;
 public class MarkListActivity extends Activity {
     /** Called when the activity is first created. */
 	private ListView lv;
+	int PageTotal;
+	String PTstr;
 	int froll=1,lroll=200;
     int SmoothDist=58;
     int SmoothDistMinus=-72;
@@ -280,9 +282,7 @@ public class MarkListActivity extends Activity {
 		strength++;
 	//	 showtop("Added 1 Roll");
 	}
-    
-    
-    
+
     
     private void LongPressInsertBelow(int RollIdx)
     { 	if(RollIdx<2 ||RollIdx>strength+2) {show("Out of Range"); return;}
@@ -305,27 +305,31 @@ public class MarkListActivity extends Activity {
 		// showtop("Added 1 Roll");
 	}
     
-       
+       private void DoPageTotal()
+	   { int len;
+		   PageTotal=0;
+		   String temp[],stemp;
+		   for(int i=2;i<strength+2;i++)
+		   { stemp=Roll.get(i);
+			   if(stemp.contains("AB")) continue;
+			   temp=stemp.split(":");
+			   stemp=temp[1].trim(); ///reuse stemp
+			   len=stemp.length();
+			   if(len==0) continue;
+			   int tempnum = Integer.parseInt(temp[1].replaceAll("[^0-9.]",""));
+			   PageTotal=PageTotal+tempnum;
+		   }
+
+		   PTstr=String.format("Page Total : %d",PageTotal);
+
+	   }
     
     private void ShowPageTotal()
-    { int PageTotal=0,len;
-      String temp[],stemp;
-    for(int i=2;i<strength+2;i++)
-    { stemp=Roll.get(i);
-      if(stemp.contains("AB")) continue;
-      temp=stemp.split(":");
-      stemp=temp[1].trim(); ///reuse stemp
-      len=stemp.length();
-      if(len==0) continue;
-     int tempnum = Integer.parseInt(temp[1].replaceAll("[^0-9.]","")); 
-     PageTotal=PageTotal+tempnum;
+    {
+        DoPageTotal();
+		showtop(PTstr);
     }
-    
-    String msg=String.format("Page Total : %d",PageTotal);
-    showtop(msg);
-    }
-    	
-    
+
     private void ShowInfo(String about)
     {
     	AlertDialog.Builder builder = new AlertDialog.Builder(this);
@@ -1896,10 +1900,10 @@ private void SaveList()
 		myOutWriter.close();
 		fOut.close();
 		///save pdf
-
+        DoPageTotal();
 		WritePDF wp = new WritePDF();
 		wp.SetData(CollegeName1,Clas+"-"+Div,Subject,
-				  Examiner,Exam,sMax,Date);
+				  Examiner,Exam,sMax,Date,PTstr);
 		wp.SetRollArray(Roll,Mrk);
 		String pdfname=FileNameWithPath.replaceAll(".mrk",".pdf");
 		wp.write(pdfname);
