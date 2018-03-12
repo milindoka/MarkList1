@@ -1,4 +1,4 @@
-#Sat Mar 10 21:22:57 IST 2018
-base.0=/home/student/AndroidStudioProjects/MarkList1/MarkList/build/intermediates/transforms/dexMerger/debug/22
+#Mon Mar 12 18:04:24 IST 2018
+base.0=/home/milind/AndroidStudioProjects/Marklist1/MarkList/build/intermediates/transforms/dexMerger/debug/3
 path.0=classes.dex
 renamed.0=classes.dex

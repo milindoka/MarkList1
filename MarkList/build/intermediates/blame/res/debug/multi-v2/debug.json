@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/student/AndroidStudioProjects/MarkList1/MarkList/build/intermediates/res/merged/debug/values_values.arsc.flat",
+            "outputFile": "/home/milind/AndroidStudioProjects/Marklist1/MarkList/build/intermediates/res/merged/debug/values_values.arsc.flat",
             "map": [
                 {
-                    "source": "/home/student/AndroidStudioProjects/MarkList1/MarkList/src/main/res/values/strings.xml",
+                    "source": "/home/milind/AndroidStudioProjects/Marklist1/MarkList/src/main/res/values/strings.xml",
                     "from": {
                         "startLines": "4,5,7,6,3,9,8",
                         "startColumns": "4,4,4,4,4,4,4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "/home/student/AndroidStudioProjects/MarkList1/MarkList/src/main/res/values/style.xml",
+                    "source": "/home/milind/AndroidStudioProjects/Marklist1/MarkList/src/main/res/values/style.xml",
                     "from": {
                         "startLines": "7,3",
                         "startColumns": "4,4",

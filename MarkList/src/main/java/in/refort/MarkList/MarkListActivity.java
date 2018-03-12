@@ -1,8 +1,5 @@
 package in.refort.MarkList;
 
-
-
-
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
@@ -763,9 +760,7 @@ public class MarkListActivity extends Activity {
         final Button buttonHeader = (Button) findViewById(R.id.Header);
 		buttonHeader.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v)
-			{ 
-	            WritePDF wp = new WritePDF();
-	            wp.write("marklist","success");
+			{
 				GetHeaderDlg();
 			}
 			});
@@ -1505,11 +1500,8 @@ public class MarkListActivity extends Activity {
     }
     
     private void SendList()
-    { 
-    //	createPdf();
-    	
-    	
-    	
+    {
+
     	String temp=Div.trim()+"-"+Exam.trim()+"-"+Subject.trim()+"-"+Clas.trim()+"-"+Examiner.trim();
     	Intent sendIntent = new Intent(Intent.ACTION_SEND);
     	sendIntent.putExtra(Intent.EXTRA_SUBJECT,temp);
@@ -1901,7 +1893,17 @@ private void SaveList()
 		myOutWriter.append(txtData);
 		myOutWriter.close();
 		fOut.close();
-		showtop("Saved on SD card");
+		///save pdf
+
+		WritePDF wp = new WritePDF();
+		wp.SetData(CollegeName1,Clas+"-"+Div,Subject,
+				  Examiner,Exam,sMax,Date);
+		wp.SetRollArray(Roll,Mrk);
+		String pdfname=FileNameWithPath.replaceAll(".mrk",".pdf");
+		wp.write(pdfname);
+
+		showtop("Saved in mrk and pdf format");
+	//	showtop(pdfname);
 				
 	} catch (Exception e) {
 		Toast.makeText(getBaseContext(), e.getMessage(),
