@@ -667,7 +667,7 @@ public class MarkListActivity extends Activity {
         ////////////First Default Title
         final TextView myTitleText = (TextView) findViewById(R.id.ttext);
 		 //if (myTitleText != null)
-		     myTitleText.setText("MarkList 3.1 - Untitled");
+		     myTitleText.setText("MarkList 3.2 - Untitled");
         
         
         
@@ -1903,7 +1903,7 @@ private void SaveList()
         DoPageTotal();
 		WritePDF wp = new WritePDF();
 		wp.SetData(CollegeName1,Clas+"-"+Div,Subject,
-				  Examiner,Exam,sMax,Date,PTstr);
+				  Examiner,Exam,sMax,Date,PTstr,Set.get(1),Mrk.get(1));
 		wp.SetRollArray(Roll,Mrk);
 		String pdfname=FileNameWithPath.replaceAll(".mrk",".pdf");
 		wp.write(pdfname);
@@ -2319,8 +2319,8 @@ private void Clean()
 			    FileNameWithPath=""; ///fresh file created
 			 
 			 	final TextView myTitleText = (TextView) findViewById(R.id.ttext);
-			 	myTitleText.setText("MarkList 3.1 - Untitled");
-			 	
+			 	myTitleText.setText("MarkList 3.2 - Untitled");
+
 			 	modified=false;
 			 	
 			 	
@@ -2417,7 +2417,7 @@ private void GetNewRoll()
 			    FileNameWithPath=""; ///fresh file created
 			 
 			 	final TextView myTitleText = (TextView) findViewById(R.id.ttext);
-			 	myTitleText.setText("MarkList 3.1 - Untitled");
+			 	myTitleText.setText("MarkList 3.2 - Untitled");
 			 	
 			 	
 			 	

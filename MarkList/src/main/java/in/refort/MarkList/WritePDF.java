@@ -43,10 +43,11 @@ public class WritePDF
     int strength=147,requiredtables=0;
     String collegename,classdiv,subject,examiner,examination,totalmarks,date;
     String pagetotal;
+    String key,mrk;
 
    void SetData(String collegename,String classdiv,String subject,
                 String examiner, String examination,String totalmarks,
-                String date,String pagetotal) {
+                String date,String pagetotal,String key,String mrk) {
        this.collegename = collegename;
        this.classdiv = classdiv;
        this.subject = subject;
@@ -55,6 +56,8 @@ public class WritePDF
        this.totalmarks = totalmarks;
        this.date = date;
        this.pagetotal=pagetotal;
+       this.key=key;
+       this.mrk=mrk;
    }
 
    void SetRollArray(ArrayList<String>  roll,ArrayList mark)
@@ -198,19 +201,32 @@ public class WritePDF
 
     void AddFooter(Document document) throws DocumentException, IOException
     {PdfPTable table = new PdfPTable(2);
-
-        PdfPCell cell = new PdfPCell(new Phrase(" "));
+    PdfPCell cell;
+        if(key.length()!=0)
+        cell = new PdfPCell(new Phrase("Key : "+ key));
+        else
+        cell = new PdfPCell(new Phrase(" "));
         cell.setBorder(PdfPCell.NO_BORDER);
         cell.setHorizontalAlignment(PdfPCell.ALIGN_LEFT);
         table.addCell(cell);
 
-        cell = new PdfPCell(new Phrase(" "));
+        cell = new PdfPCell(new Phrase(" "));  ///skip right column
         cell.setBorder(PdfPCell.NO_BORDER);
         table.addCell(cell);
+
+        if(mrk.length()!=0)
+            cell = new PdfPCell(new Phrase("Mrk : "+ mrk));
+        else
+            cell = new PdfPCell(new Phrase(" "));
+        cell.setBorder(PdfPCell.NO_BORDER);
         table.addCell(cell);
+
+        cell = new PdfPCell(new Phrase(" "));  ///skip right column
+        cell.setBorder(PdfPCell.NO_BORDER);
         table.addCell(cell);
-        table.addCell(cell);
-        table.addCell(cell);
+
+        table.addCell(cell); //skip line
+        table.addCell(cell); //
 
 
         cell = new PdfPCell(new Phrase(pagetotal));

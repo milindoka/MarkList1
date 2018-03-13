@@ -1,4 +1,4 @@
-#Mon Mar 12 18:04:25 IST 2018
+#Tue Mar 13 08:55:56 IST 2018
 path.1=classes.dex
 path.0=classes.dex
 renamed.5=classes6.dex
@@ -7,12 +7,12 @@ renamed.3=classes4.dex
 renamed.2=classes3.dex
 renamed.1=classes2.dex
 renamed.0=classes.dex
-base.5=/home/milind/AndroidStudioProjects/Marklist1/MarkList/build/intermediates/transforms/dexMerger/debug/12
-base.4=/home/milind/AndroidStudioProjects/Marklist1/MarkList/build/intermediates/transforms/dexMerger/debug/15
-base.3=/home/milind/AndroidStudioProjects/Marklist1/MarkList/build/intermediates/transforms/dexMerger/debug/13
-base.2=/home/milind/AndroidStudioProjects/Marklist1/MarkList/build/intermediates/transforms/dexMerger/debug/16
-base.1=/home/milind/AndroidStudioProjects/Marklist1/MarkList/build/intermediates/transforms/dexMerger/debug/11
-base.0=/home/milind/AndroidStudioProjects/Marklist1/MarkList/build/intermediates/transforms/dexMerger/debug/14
+base.5=/home/student/AndroidStudioProjects/Marklist1/MarkList/build/intermediates/transforms/dexMerger/debug/15
+base.4=/home/student/AndroidStudioProjects/Marklist1/MarkList/build/intermediates/transforms/dexMerger/debug/16
+base.3=/home/student/AndroidStudioProjects/Marklist1/MarkList/build/intermediates/transforms/dexMerger/debug/13
+base.2=/home/student/AndroidStudioProjects/Marklist1/MarkList/build/intermediates/transforms/dexMerger/debug/14
+base.1=/home/student/AndroidStudioProjects/Marklist1/MarkList/build/intermediates/transforms/dexMerger/debug/11
+base.0=/home/student/AndroidStudioProjects/Marklist1/MarkList/build/intermediates/transforms/dexMerger/debug/12
 path.5=classes.dex
 path.4=classes.dex
 path.3=classes.dex
