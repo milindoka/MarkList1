@@ -6,6 +6,7 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
+import java.net.URISyntaxException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -457,7 +458,9 @@ public class MarkListActivity extends Activity {
     
     private void OpenFile()
     {	OpenNow=false;
-    	List<String> listItems = new ArrayList<String>();
+		for(int i=0;i<100;i++)  { Set.add(""); Mrk.add("");}
+		TotSets=1;
+		List<String> listItems = new ArrayList<String>();
     	File mfile=new File("/sdcard");
   	File[] list=mfile.listFiles();
   	  String tempupper;
@@ -1505,15 +1508,30 @@ public class MarkListActivity extends Activity {
     
     private void SendList()
     {
+		String pdfname=FileNameWithPath.replaceAll(".mrk",".pdf");
 
-    	String temp=Div.trim()+"-"+Exam.trim()+"-"+Subject.trim()+"-"+Clas.trim()+"-"+Examiner.trim();
-    	Intent sendIntent = new Intent(Intent.ACTION_SEND);
+		ArrayList<Uri> uris = new ArrayList<Uri>();
+
+		String[] filePaths = new String[] {FileNameWithPath,pdfname};
+		for (String file : filePaths)
+		{
+			File fileIn = new File(file);
+			Uri u = Uri.fromFile(fileIn);
+			uris.add(u);
+		}
+
+
+		String temp=Div.trim()+"-"+Exam.trim()+"-"+Subject.trim()+"-"+Clas.trim()+"-"+Examiner.trim();
+    	Intent sendIntent = new Intent(Intent.ACTION_SEND_MULTIPLE);
     	sendIntent.putExtra(Intent.EXTRA_SUBJECT,temp);
     		sendIntent.putExtra(Intent.EXTRA_TEXT, "Sending Marklist...");
-    		sendIntent.putExtra(Intent.EXTRA_STREAM, Uri.parse("file://" + FileNameWithPath));
-		    String pdfname=FileNameWithPath.replaceAll(".mrk",".pdf");
-		    sendIntent.putExtra(Intent.EXTRA_STREAM, Uri.parse("file://" + pdfname));
-    		
+
+
+		    sendIntent.putExtra(Intent.EXTRA_STREAM, uris);
+		    //yntaxException.parse("file://" + FileNameWithPath),
+			//		Uri.parse("file://" + pdfname));
+    		//sendIntent.putExtra(Intent.EXTRA_STREAM, Uri.parse("file://" + FileNameWithPath));
+
     		String E1=Email1.trim();
     		String E2=Email2.trim();
     		if(E1.length()==0 && E2.length()==0) {show("Specify Email(s) by [Set] button"); return; }
