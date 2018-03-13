@@ -13,6 +13,7 @@ import com.itextpdf.text.BaseColor;
 import com.itextpdf.text.Document;
 import com.itextpdf.text.DocumentException;
 import com.itextpdf.text.Font;
+import com.itextpdf.text.FontFactory;
 import com.itextpdf.text.PageSize;
 import com.itextpdf.text.Paragraph;
 import com.itextpdf.text.Phrase;
@@ -44,7 +45,7 @@ public class WritePDF
     String collegename,classdiv,subject,examiner,examination,totalmarks,date;
     String pagetotal;
     String key,mrk;
-
+    Font keyFont = FontFactory.getFont(FontFactory.COURIER, 13, BaseColor.BLACK);
    void SetData(String collegename,String classdiv,String subject,
                 String examiner, String examination,String totalmarks,
                 String date,String pagetotal,String key,String mrk) {
@@ -203,7 +204,7 @@ public class WritePDF
     {PdfPTable table = new PdfPTable(2);
     PdfPCell cell;
         if(key.length()!=0)
-        cell = new PdfPCell(new Phrase("Key : "+ key));
+        cell = new PdfPCell(new Phrase("Key : "+ key,keyFont));
         else
         cell = new PdfPCell(new Phrase(" "));
         cell.setBorder(PdfPCell.NO_BORDER);
@@ -215,7 +216,7 @@ public class WritePDF
         table.addCell(cell);
 
         if(mrk.length()!=0)
-            cell = new PdfPCell(new Phrase("Mrk : "+ mrk));
+            cell = new PdfPCell(new Phrase("Mrk : "+ mrk,keyFont));
         else
             cell = new PdfPCell(new Phrase(" "));
         cell.setBorder(PdfPCell.NO_BORDER);
