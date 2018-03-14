@@ -1,96 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
-    abi="arm64-v8a,armeabi-v7a,armeabi"
+    abi="x86"
     api-level="22"
     build-mode="COLD"
     density="xhdpi"
     format="10"
-    ir-eligibility="COMPATIBLE"
+    ir-eligibility="FIELD_REMOVED"
     plugin-version="3.0.1"
-    timestamp="1520913715918"
-    token="-6501807209758308081"
+    timestamp="1521000293314"
+    token="117877035819082811"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="380" />
+        duration="776" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="18" />
+        duration="176" />
     <task
         name="verifier"
-        duration="1" />
+        duration="23" />
 
     <artifact
-        location="/home/student/AndroidStudioProjects/Marklist1/MarkList/build/intermediates/split-apk/debug/slices/slice_1.apk"
+        location="/home/milind/AndroidStudioProjects/Marklist1/MarkList/build/intermediates/split-apk/debug/slices/slice_1.apk"
         type="SPLIT" />
     <artifact
-        location="/home/student/AndroidStudioProjects/Marklist1/MarkList/build/outputs/apk/debug/MarkList-debug.apk"
+        location="/home/milind/AndroidStudioProjects/Marklist1/MarkList/build/outputs/apk/debug/MarkList-debug.apk"
         type="SPLIT_MAIN" />
 
     <build
         build-mode="FULL"
-        timestamp="1520911550331"
-        verifier="FULL_BUILD_REQUESTED" >
+        ir-eligibility="FIELD_TYPE_CHANGE"
+        timestamp="1520998728830"
+        verifier="COLD_SWAP_REQUESTED" >
         <artifact
-            location="/home/student/AndroidStudioProjects/Marklist1/MarkList/build/intermediates/split-apk/debug/dep/dependencies.apk"
+            location="/home/milind/AndroidStudioProjects/Marklist1/MarkList/build/intermediates/split-apk/debug/dep/dependencies.apk"
             type="SPLIT" />
         <artifact
-            location="/home/student/AndroidStudioProjects/Marklist1/MarkList/build/intermediates/split-apk/debug/slices/slice_0.apk"
+            location="/home/milind/AndroidStudioProjects/Marklist1/MarkList/build/intermediates/split-apk/debug/slices/slice_1.apk"
             type="SPLIT" />
         <artifact
-            location="/home/student/AndroidStudioProjects/Marklist1/MarkList/build/intermediates/split-apk/debug/slices/slice_1.apk"
+            location="/home/milind/AndroidStudioProjects/Marklist1/MarkList/build/intermediates/split-apk/debug/slices/slice_0.apk"
             type="SPLIT" />
         <artifact
-            location="/home/student/AndroidStudioProjects/Marklist1/MarkList/build/intermediates/split-apk/debug/slices/slice_2.apk"
+            location="/home/milind/AndroidStudioProjects/Marklist1/MarkList/build/intermediates/split-apk/debug/slices/slice_2.apk"
             type="SPLIT" />
         <artifact
-            location="/home/student/AndroidStudioProjects/Marklist1/MarkList/build/intermediates/split-apk/debug/slices/slice_3.apk"
+            location="/home/milind/AndroidStudioProjects/Marklist1/MarkList/build/intermediates/split-apk/debug/slices/slice_3.apk"
             type="SPLIT" />
         <artifact
-            location="/home/student/AndroidStudioProjects/Marklist1/MarkList/build/intermediates/split-apk/debug/slices/slice_4.apk"
+            location="/home/milind/AndroidStudioProjects/Marklist1/MarkList/build/intermediates/split-apk/debug/slices/slice_4.apk"
             type="SPLIT" />
         <artifact
-            location="/home/student/AndroidStudioProjects/Marklist1/MarkList/build/intermediates/split-apk/debug/slices/slice_5.apk"
+            location="/home/milind/AndroidStudioProjects/Marklist1/MarkList/build/intermediates/split-apk/debug/slices/slice_5.apk"
             type="SPLIT" />
         <artifact
-            location="/home/student/AndroidStudioProjects/Marklist1/MarkList/build/intermediates/split-apk/debug/slices/slice_6.apk"
+            location="/home/milind/AndroidStudioProjects/Marklist1/MarkList/build/intermediates/split-apk/debug/slices/slice_7.apk"
             type="SPLIT" />
         <artifact
-            location="/home/student/AndroidStudioProjects/Marklist1/MarkList/build/intermediates/split-apk/debug/slices/slice_8.apk"
+            location="/home/milind/AndroidStudioProjects/Marklist1/MarkList/build/intermediates/split-apk/debug/slices/slice_6.apk"
             type="SPLIT" />
         <artifact
-            location="/home/student/AndroidStudioProjects/Marklist1/MarkList/build/intermediates/split-apk/debug/slices/slice_7.apk"
+            location="/home/milind/AndroidStudioProjects/Marklist1/MarkList/build/intermediates/split-apk/debug/slices/slice_8.apk"
             type="SPLIT" />
         <artifact
-            location="/home/student/AndroidStudioProjects/Marklist1/MarkList/build/intermediates/split-apk/debug/slices/slice_9.apk"
+            location="/home/milind/AndroidStudioProjects/Marklist1/MarkList/build/intermediates/split-apk/debug/slices/slice_9.apk"
             type="SPLIT" />
         <artifact
-            location="/home/student/AndroidStudioProjects/Marklist1/MarkList/build/outputs/apk/debug/MarkList-debug.apk"
+            location="/home/milind/AndroidStudioProjects/Marklist1/MarkList/build/outputs/apk/debug/MarkList-debug.apk"
             type="SPLIT_MAIN" />
     </build>
     <build
         build-mode="COLD"
-        ir-eligibility="COMPATIBLE"
-        timestamp="1520913154466"
+        ir-eligibility="FIELD_REMOVED"
+        timestamp="1521000293314"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
-            location="/home/student/AndroidStudioProjects/Marklist1/MarkList/build/outputs/apk/debug/MarkList-debug.apk"
-            type="SPLIT_MAIN" />
-    </build>
-    <build
-        build-mode="COLD"
-        ir-eligibility="COMPATIBLE"
-        timestamp="1520913715918"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="/home/student/AndroidStudioProjects/Marklist1/MarkList/build/intermediates/split-apk/debug/slices/slice_1.apk"
+            location="/home/milind/AndroidStudioProjects/Marklist1/MarkList/build/intermediates/split-apk/debug/slices/slice_1.apk"
             type="SPLIT" />
         <artifact
-            location="/home/student/AndroidStudioProjects/Marklist1/MarkList/build/outputs/apk/debug/MarkList-debug.apk"
+            location="/home/milind/AndroidStudioProjects/Marklist1/MarkList/build/outputs/apk/debug/MarkList-debug.apk"
             type="SPLIT_MAIN" />
     </build>
 

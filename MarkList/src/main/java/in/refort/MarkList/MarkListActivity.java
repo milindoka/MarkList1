@@ -1375,6 +1375,7 @@ public class MarkListActivity extends Activity {
 				   }
 			}
 		});
+
         final TextView tv = (TextView) findViewById(R.id.Help);
         tv.setOnClickListener(new View.OnClickListener() 
     	{
@@ -1382,6 +1383,10 @@ public class MarkListActivity extends Activity {
     		{showhelp();
     		}
     });
+
+
+
+
     }
  //////////////////////////////////////////////////////////////Non Event Functions
     
